@@ -1,4 +1,5 @@
 {
+  "homepage": "http//ilya-petrashkevich.github.io/react-app",
   "name": "react-app-learn",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,7 @@
     "@types/redux": "^3.6.0",
     "axios": "^0.27.2",
     "bootstrap": "^5.1.3",
+    "gh-pages": "^4.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-redux": "^8.0.2",
@@ -26,8 +28,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
     "lint": "eslint .",
-    "build": "react-scripts build"
+
   },
   "browserslist": {
     "production": [
